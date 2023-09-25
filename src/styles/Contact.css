@@ -1,72 +1,63 @@
-.contacto{
+.contacto {
     margin: 150px 0;
-}
-
-.contacto .titulo{
+  }
+  
+  .contacto .titulo {
     width: 100%;
     margin: 0;
-}
-
-.contacto form{
+  }
+  
+  .contacto form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 25px;
     height: auto;
-  border-radius: 25px;
-  background: #fff;
-  box-shadow: -3px -3px 7px #ffffff73,
-               2px 2px 5px rgba(94,104,121,0.288);
-}
-
-.contacto form .left{
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  }
+  
+  .contacto form .left {
     height: 100%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-}
-
-
-.contacto form .inputs{
-    width: 100%;
+    align-items: center;
+  }
+  
+  .contacto form .inputs {
+    width: 95%;
     display: flex;
-    gap: 25px;
-}
-
-
-.contacto form .grupo-input{
-    width: 100%;
-}
-
-.grupo-input input,
-.grupo-input textarea {
+    gap: 10px;
+  }
+  
+  .contacto form .grupo-input {
+    width: 95%;
+  }
+  
+  .grupo-input input,
+  .grupo-input textarea {
     width: 100%;
     height: 45px;
-    padding-left: 10px;
     outline: none;
     border: none;
     background: #dde1e7;
     color: #595959;
     border-radius: 25px;
-    box-shadow: inset 2px 2px 5px #BABECC,
-                inset -5px -5px 10px #ffffff73;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
   }
   
   .grupo-input input:focus,
   .grupo-input textarea:focus {
-    box-shadow: inset 1px 1px 2px #BABECC,
-                inset -1px -1px 2px #ffffff73;
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff73;
   }
-
-  .grupo-input textarea{
+  
+  .grupo-input textarea {
     resize: none;
     padding-top: 10px;
     height: 120px;
   }
-  
-
   
   .contacto .btn {
     display: inline-block;
@@ -83,9 +74,9 @@
     border: none;
     cursor: pointer;
     max-width: 150px;
-}
-
-.contacto .btn:before {
+  }
+  
+  .contacto .btn:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -98,9 +89,9 @@
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-}
-
-.contacto .btn:after {
+  }
+  
+  .contacto .btn:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -113,42 +104,38 @@
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-}
-
-.contacto .btn:hover {
+  }
+  
+  .contacto .btn:hover {
     color: #ffffff;
-}
-
-.contacto .btn:hover:before {
+  }
+  
+  .contacto .btn:hover:before {
     top: -35%;
-    background-color: var( --color-success);
+    background-color: var(--color-success);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.procesos .btn:hover:after {
+  }
+  
+  .procesos .btn:hover:after {
     top: -45%;
-    background-color: var( --color-success);
+    background-color: var(--color-success);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-
-.right {
+  }
+  
+  .right {
     width: 100%;
     height: 500px;
     position: relative;
     overflow: hidden;
     background: var(--oscuro);
     border-radius: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-
-    
   }
-
-  .right img{
+  
+  .right img {
     max-width: 250px;
     position: absolute;
   }
@@ -167,31 +154,41 @@
     height: 100%;
     z-index: 999;
   }
-
-
+  
   @media (max-width: 780px) {
-    .contacto form{
-        grid-template-columns: 1fr ;
-        grid-template-columns: column-reverse;
+    .contacto form {
+      grid-template-columns: 1fr;
+      grid-template-columns: column-reverse;
+      gap: 50px;
     }
-
-    .contacto form .left{
-        padding: 10px;
+  
+    .contacto form .left {
+      padding: 10px 0;
     }
-
+  
+    .contacto form .grupo-input {
+      width: 95%;
+    }
+  
+    .contacto form .inputs {
+      width: 95%;
+    }
+  
     .contacto form .grupo-input input,
-    .contacto form .grupo-input textarea{
-        max-width: 98%;
+    .contacto form .grupo-input textarea {
+      width: calc(100% - 10px);
+      padding: 0;
+      padding-left: 10px;
     }
-
-    .contacto form .inputs{
-        max-width: 98%;
+    .contacto form .grupo-input textarea {
+      padding-top: 10px;
     }
-
-    .contacto .right{
-        height: 300px;
+  
+    .contacto .right {
+      height: 300px;
     }
-    .right img{
-        max-width: 150px;
-      }
+    .right img {
+      max-width: 150px;
+    }
   }
+  
