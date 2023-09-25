@@ -1,0 +1,23 @@
+.swal2-popup {
+    border-radius: 30px;
+    background: var(--blanco);
+    box-shadow: rgba(50, 50, 93, 0.096) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.swal2-select{
+    border-radius: 15px;
+    height: 45px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+      -1px -1px 6px rgba(20, 20, 20, 0.4);
+    border: none;
+    transition: all .4s;
+}
+.swal2-select:focus{
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    transition: all .4s;
+}
+
+.swal2-confirm.swal2-styled{
+    background: var(--primario);
+    padding: 10px 30px;
+}
